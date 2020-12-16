@@ -11,3 +11,5 @@ git --global user.email "email@xxx.com"
 1、mkdir    xxx
 2、cd       xxx
 3、git init
+4、git add xxx.yyy                  //添加文件
+5、git commit -m "Describe"         //提交文件,并附近说明
