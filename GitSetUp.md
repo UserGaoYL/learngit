@@ -85,3 +85,15 @@ ssh-keygen -t rsa -C "email.@xxx.com"
 ### 3. 添加远程仓库
 
 1. 登录GitHub，点击``Create a new repo``按钮，创建一个新的仓库
+2. Repository name填入``learngit``，其他的保持默认，点击``Create repository``就成功创建了一个新的Git仓库
+3. 目前这个仓库是空的，可以从这个仓库克隆出新的仓库，也可以绑定本地已有的仓库，然后把本地仓库内容推送到GitHub仓库
+4. 在本地``learngit``仓库下运行命令：
+```
+git remote add origin git@github.com:xxxx/learngit.git
+```
+添加后，远程库的名字就是``origin``，这是Git默认叫法，也可以修改成其他的
+5. 把本地仓库的内容推送到远程仓库
+
+```
+git pust -u origin master
+```
